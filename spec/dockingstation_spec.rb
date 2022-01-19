@@ -12,6 +12,8 @@ it 'releases working bike' do
   end
 
   it 'respond to dock with bike' do
-  expect(is_expected.to respond_to (:dock)).with(1).argument
+    bike = Bike.new
+  expect(docking_station.dock(bike)).to eq(bike)
+  end
 
 end
