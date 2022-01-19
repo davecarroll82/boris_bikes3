@@ -1,7 +1,7 @@
 class DockingStation
 
   def release_bike
-    puts "bike released"
+    "bike released"
   end 
 
 end
